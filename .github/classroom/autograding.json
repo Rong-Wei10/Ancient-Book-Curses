@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "name": "Test 1. Test connecting to 1313",
+      "setup": "",
+      "run": "make test-connect-1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "Test 2. Test connecting to all ports",
+      "setup": "",
+      "run": "make test-connect-all",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Test 3. Test PING to the server",
+      "setup": "",
+      "run": "make test-ping",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Test 4. Test GET_SINGLE",
+      "setup": "",
+      "run": "make test-single",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Test 5. Test GET_MULTI",
+      "setup": "",
+      "run": "make test-multi",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Test 6. Test with a different seed value",
+      "setup": "",
+      "run": "make test-seed",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Test 7. Test for memory leaks",
+      "setup": "docker build -t test_maledict .",
+      "run": "docker run --rm test_maledict make test-memory",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Test 8. Test style",
+      "setup": "sudo pip3 install cpplint",
+      "run": "make test-style",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Test 9. Test error code for bad op",
+      "setup": "",
+      "run": "make test-error",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
